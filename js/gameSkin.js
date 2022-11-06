@@ -45,8 +45,6 @@ play.addEventListener('click', function() {
     },delay);
 })
 
-
-
 function endB(btn){
     btn.style.backgroundColor = "#70f52d";
     btn.style.borderColor = "#70f52d";
