@@ -18,7 +18,7 @@ const upM2 = document.getElementById("upM2");
 const end = document.getElementById("end");
 
 /* Globální proměnné */
-let Money = 2000;
+let Money = 0;
 let hod; 
 let hody = []; 
 let timer = false;
