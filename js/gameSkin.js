@@ -21,7 +21,7 @@ const end = document.getElementById("end");
 /* Globální proměnné */
 let skin = "blue";
 let Money = 0;
-let hod; 
+let hod = 6; 
 let hody = []; 
 let timer = false;
 let delay = 2000;
@@ -32,6 +32,7 @@ let Mgain = 1;
 select.addEventListener("change", function(e){
     skin = e.target.value;
     console.log(skin);
+    dice.src = `${skin}/kostka${hod}.png`;
 })
 
 /* Funkce zajišťující animaci */
@@ -42,6 +43,7 @@ function animace() {
     }
     dice.src = `${skin}/kostka${hod}.png`;
 }
+
 /*Reakce na kliknutí tlačítka HREJ*/
 play.addEventListener('click', function() {
     timer = setInterval(animace, 100);
@@ -155,7 +157,7 @@ end.addEventListener("click", function(){
     if(Money >= 300){
         Money = 0;
         mena.innerText = `${Money} C`;
-        dice.src = "img/smile.png";
+        dice.src = `${skin}/smile.png`;
         result.innerHTML = "Thank for Playing";
         endB(play);
         endB(upM1);
