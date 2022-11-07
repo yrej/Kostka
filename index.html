@@ -18,55 +18,80 @@
     <main class="container">
         <div id="money" class="m-3">0 C</div>
         <div class="row">
-            <div class="m-3 mt-5 p-3 col-2">
-                <img src="img/kostka6.png" alt="kostka" id="dice1">
+            <div class="m-3 mt-5 px-4 pt-5 p-3 col-11 col-lg-2 text-center">
+                <img src="blue/kostka6.png" alt="kostka" id="dice1">
             </div>
-                <div class="m-3 col-4">
-                    <h4 class="ml-3 text-center">Rychlost</h3>
+            <div class="m-3 col-11 col-lg-4">
+                <h4 class="ml-3 text-center">Rychlost</h3>
                     <div class="row m-3"><button class="btn btn-warning" id="upR1">upgrade</button>
-                        <div><p class="mt-2 ml-3">Zrychlí točení kostky I (20 C)</p></div>
+                        <div>
+                            <p class="mt-2 ml-3">Zrychlí točení kostky I (20 C)</p>
+                        </div>
                     </div>
                     <div class="row m-3"><button class="btn btn-warning" id="upR2">upgrade</button>
-                        <div><p class="mt-2 ml-3">Zrychlí točení kostky II (50 C)</p></div>
+                        <div>
+                            <p class="mt-2 ml-3">Zrychlí točení kostky II (50 C)</p>
+                        </div>
                     </div>
                     <div class="row m-3"><button class="btn btn-warning" id="upR3">upgrade</button>
-                        <div><p class="mt-2 ml-3">Zrychlí točení kostky III (100 C)</p></div>
+                        <div>
+                            <p class="mt-2 ml-3">Zrychlí točení kostky III (100 C)</p>
+                        </div>
                     </div>
-                </div>
-                <div class="m-3 col-4">
-                    <h4 class="ml-3 text-center">Štěstí</h3>
+            </div>
+            <div class="m-3 col-11 col-lg-4">
+                <h4 class="ml-3 text-center">Štěstí</h3>
                     <div class="row m-3"><button class="btn btn-warning" id="upL1">upgrade</button>
-                        <div><p class="mt-2 ml-3">Zvýšení štěstí kostky I (40 C)</p></div>
+                        <div>
+                            <p class="mt-2 ml-3">Zvýšení štěstí kostky I (40 C)</p>
+                        </div>
                     </div>
                     <div class="row m-3"><button class="btn btn-warning" id="upL2">upgrade</button>
-                        <div><p class="mt-2 ml-3">Zvýšení štěstí kostky II (90 C)</p></div>
+                        <div>
+                            <p class="mt-2 ml-3">Zvýšení štěstí kostky II (90 C)</p>
+                        </div>
                     </div>
                     <div class="row m-3"><button class="btn btn-warning" id="upL3">upgrade</button>
-                        <div><p class="mt-2 ml-3">Zvýšení štěstí kostky III (160 C)</p></div>
+                        <div>
+                            <p class="mt-2 ml-3">Zvýšení štěstí kostky III (160 C)</p>
+                        </div>
                     </div>
-                </div>
+            </div>
         </div>
         <div class="row">
-            <div id="result" class="m-3 col-2 alert alert-warning">Začni točit</div>
-            <div class="m-3 col-5">
+            <div id="result" class="m-3 col-11 col-lg-2 alert alert-warning text-center">Začni točit</div>
+            <div class="m-3 col-lg-5 col-11">
                 <h4 class="m-3 text-center">Peníze</h4>
                 <div class="row m-3"><button class="btn btn-warning" id="upM1">upgrade</button>
-                    <div><p class="mt-2 ml-3">Zvýšení získaných peněz I (60 C)</p></div>
+                    <div>
+                        <p class="mt-2 ml-3">Zvýšení získaných peněz I (60 C)</p>
+                    </div>
                 </div>
                 <div class="row m-3"><button class="btn btn-warning" id="upM2">upgrade</button>
-                    <div><p class="mt-2 ml-3">Zvýšení získaných peněz II (140 C)</p></div>
+                    <div>
+                        <p class="mt-2 ml-3">Zvýšení získaných peněz II (140 C)</p>
+                    </div>
                 </div>
             </div>
-            <div class="m-3 col-3">
+            <div class="m-3 col-lg-3 col-11">
                 <h4 class="m-3 text-center">Výhra</h4>
                 <div class="row m-3"><button class="btn btn-warning" id="end">upgrade</button>
-                    <div><p class="mt-2 ml-3">END ??? (300 C)</p></div>
+                    <div>
+                        <p class="mt-2 ml-3">END ??? (300 C)</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="m-3 col-2">
+            <div class="m-3 col-lg-2 col-11 text-center">
                 <button class="btn btn-danger" id="play">HREJ</button>
+            </div>
+            <div class="m-3 col-lg-9 col-11">
+                <select name="skin" id="skin" class="form-control">
+                    <option selected value="blue">modrá</option>
+                    <option value="red">červená</option>
+                    <option value="yellow">žlutá</option>
+                </select>
             </div>
         </div>
     </main>

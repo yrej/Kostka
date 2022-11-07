@@ -3,6 +3,7 @@ const mena = document.getElementById("money");
 const dice = document.getElementById('dice1');
 const result = document.getElementById('result');
 const play = document.getElementById('play');
+const select = document.getElementById("skin");
 /*Rychlost */
 const upR1 = document.getElementById("upR1");
 const upR2 = document.getElementById("upR2");
@@ -18,6 +19,7 @@ const upM2 = document.getElementById("upM2");
 const end = document.getElementById("end");
 
 /* Globální proměnné */
+let skin = "blue";
 let Money = 0;
 let hod; 
 let hody = []; 
@@ -26,13 +28,19 @@ let delay = 2000;
 let luck = 1;
 let Mgain = 1;
 
+/* Funkce na změnění barvy kostky*/
+select.addEventListener("change", function(e){
+    skin = e.target.value;
+    console.log(skin);
+})
+
 /* Funkce zajišťující animaci */
 function animace() {
     hod = Math.round(Math.ceil(Math.random() * 6) * luck);
     while(hod > 6){
         hod -= 1;
     }
-    dice.src = `img/kostka${hod}.png`;
+    dice.src = `${skin}/kostka${hod}.png`;
 }
 /*Reakce na kliknutí tlačítka HREJ*/
 play.addEventListener('click', function() {
