@@ -169,6 +169,7 @@ end.addEventListener("click", function(){
         endB(upR2);
         endB(upR3);
         endB(end);
+        select.disabled = true;
     }
 })
 
